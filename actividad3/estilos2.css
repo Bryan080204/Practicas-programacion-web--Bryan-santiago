@@ -1,0 +1,17 @@
+/* Estilos para la tabla */
+table {
+    width: 100%; /* La tabla ocupará el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Elimina los espacios entre los bordes de las celdas, haciéndolos más compactos */
+}
+
+/* Estilos para las celdas de la tabla (tanto encabezados <th> como celdas <td>) */
+th, td {
+    border: 1px solid #ddd; /* Agrega un borde de 1 píxel de grosor y color gris claro (#ddd) */
+    padding: 8px; /* Añade un espacio interno de 8 píxeles dentro de cada celda */
+    text-align: left; /* Alinea el texto de las celdas a la izquierda */
+}
+
+/* Estilos específicos para las celdas de encabezado (<th>) */
+th {
+    background-color: #f2f2f2; /* Aplica un fondo gris claro a los encabezados de la tabla */
+}
