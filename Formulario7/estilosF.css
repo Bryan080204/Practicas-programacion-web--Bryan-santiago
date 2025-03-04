@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* Aplica estilos generales a todos los elementos, eliminando márgenes y rellenos por defecto,
+       establece el tipo de caja para los elementos y usa la fuente Arial */
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 255, 255), #2570fc);
+    /* Aplica un fondo degradado de color cian a azul */
+    display: flex;
+    /* Usamos flexbox para centrar el contenido en la pantalla */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    height: 100vh;
+    /* Establece la altura del body al 100% de la altura de la ventana */
+}
+
+.container {
+    background: white;
+    /* El fondo del contenedor es blanco */
+    padding: 30px;
+    /* Aplica un relleno de 30px alrededor del contenido */
+    border-radius: 10px;
+    /* Hace que las esquinas del contenedor sean redondeadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Agrega una sombra suave alrededor del contenedor */
+    text-align: center;
+    /* Centra el texto dentro del contenedor */
+    max-width: 400px;
+    /* Define un ancho máximo de 400px */
+    width: 100%;
+    /* El contenedor ocupa el 100% del ancho disponible */
+}
+
+h1 {
+    font-size: 24px;
+    /* Define el tamaño de fuente del título como 24px */
+    margin-bottom: 20px;
+    /* Da un margen de 20px debajo del título */
+    color: black;
+    /* El color del texto del título es negro */
+}
+
+form {
+    display: flex;
+    /* Usamos flexbox para organizar los elementos del formulario */
+    flex-direction: column;
+    /* Los elementos del formulario se apilan verticalmente */
+    gap: 15px;
+    /* Agrega un espacio de 15px entre los elementos del formulario */
+}
+
+label {
+    font-weight: bold;
+    /* El texto de las etiquetas se muestra en negrita */
+    text-align: left;
+    /* Alinea las etiquetas a la izquierda */
+    color: blue;
+    /* El color del texto de las etiquetas es azul */
+}
+
+input, select {
+    padding: 10px;
+    /* Aplica un relleno de 10px a los campos de entrada y selección */
+    border: 1px solid #ccc;
+    /* Define un borde de 1px de color gris claro */
+    border-radius: 5px;
+    /* Redondea las esquinas de los campos de entrada y selección */
+    width: 100%;
+    /* Los campos ocupan el 100% del ancho disponible */
+    font-size: 16px;
+    /* Establece el tamaño de la fuente a 16px */
+}
+
+button {
+    background: #2575fc;
+    /* Establece el color de fondo del botón a azul */
+    color: white;
+    /* El texto del botón es blanco */
+    border: none;
+    /* Elimina el borde predeterminado del botón */
+    padding: 12px;
+    /* Aplica un relleno de 12px dentro del botón */
+    font-size: 16px;
+    /* Establece el tamaño de la fuente dentro del botón */
+    border-radius: 5px;
+    /* Redondea las esquinas del botón */
+    cursor: pointer;
+    /* Cambia el cursor a una mano al pasar por encima del botón */
+    transition: 0.3s;
+    /* Agrega una transición suave al pasar el ratón por encima */
+}
+
+button:hover {
+    background: #792d1a;
+    /* Cambia el color de fondo a un tono más oscuro de rojo cuando el ratón pasa por encima */
+}
+
+button i {
+    margin-right: 5px;
+    /* Agrega un espacio de 5px a la derecha del ícono dentro del botón */
+}

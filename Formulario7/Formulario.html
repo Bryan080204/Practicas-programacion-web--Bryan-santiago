@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Declara el tipo de documento HTML, indicando que es una página web HTML5 -->
+<html lang="es">
+<!-- Abre la etiqueta <html> que indica que el contenido de la página está en español -->
+
+<head>
+    <!-- Comienza la sección del encabezado de la página -->
+    <meta charset="UTF-8">
+    <!-- Especifica que la codificación de caracteres usada es UTF-8, para asegurar que todos los caracteres especiales se muestren correctamente -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define las reglas de visualización en dispositivos móviles, haciendo la página adaptable al tamaño de pantalla -->
+    
+    <title>Formulario de Bryan Santiago</title>
+    <!-- Establece el título de la página, que aparece en la pestaña del navegador -->
+    
+    <link rel="stylesheet" href="estilosF.css">
+    <!-- Enlaza el archivo de estilos externo "estilosF.css" para dar formato y diseño a la página -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Enlaza a la biblioteca de íconos Font Awesome para usar iconos como los de la libreta y el check en el formulario -->
+</head>
+
+<body>
+    <!-- Comienza el contenido del cuerpo de la página -->
+    
+    <div class="container">
+    <!-- Crea un contenedor para organizar el contenido dentro de la página -->
+    
+        <h1><i class="fas fa-book"></i> Formulario de Bryan Santiago</h1>
+        <!-- Título principal de la página, incluye un ícono de una libreta al lado del texto -->
+        
+        <form action="/submit" method="post">
+        <!-- Crea un formulario que enviará los datos a la ruta '/submit' con el método POST -->
+        
+            <label for="name">Nombre:</label>
+            <!-- Etiqueta que describe el campo para el nombre -->
+            <input type="text" id="name" name="name" required>
+            <!-- Campo de entrada para el nombre, el atributo "required" hace que sea obligatorio -->
+            
+            <label for="email">Correo electrónico:</label>
+            <!-- Etiqueta que describe el campo para el correo electrónico -->
+            <input type="email" id="email" name="email" required>
+            <!-- Campo de entrada para el correo electrónico, el atributo "required" hace que sea obligatorio -->
+            
+            <label for="city">Ciudad:</label>
+            <!-- Etiqueta que describe el campo para seleccionar la ciudad -->
+            <select id="city" name="city">
+            <!-- Crea un campo desplegable (select) donde se elige la ciudad -->
+                <option value="poo">OAXACA</option>
+                <!-- Opción para Oaxaca -->
+                <option value="ai">MÉXICO</option>
+                <!-- Opción para Ciudad de México -->
+                <option value="as">PUEBLA</option>
+                <!-- Opción para Puebla -->
+                <option value="ar">MONTERREY</option>
+                <!-- Opción para Monterrey -->
+            </select>
+            <!-- Cierra el campo de selección -->
+            
+            <button type="submit">
+            <!-- Crea un botón que envía el formulario -->
+                <i class="fas fa-check"></i> Enviar
+                <!-- Ícono de un "check" antes del texto del botón -->
+            </button>
+        </form>
+        <!-- Cierra el formulario -->
+        
+    </div>
+    <!-- Cierra el contenedor -->
+    
+</body>
+<!-- Cierra el cuerpo de la página -->
+
+</html>
+<!-- Cierra el documento HTML -->
