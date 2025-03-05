@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Row</title>
+    <title>Botones con CSS y Bootstrap</title>
+    <!-- Vincula Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Vincula tu archivo CSS personalizado (row.css) -->
+    <link rel="stylesheet" href="row.css">
+    <!-- Vincula Bootstrap desde un CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<body>
     <div class="container">
-        <div class="row">
-            <h1 class="text-center">Uso del row</h1>
+        <div class="row"> 
+            <h1 class="text-center">Uso del row</h1> 
 
             <div class="col-md-6">
                 <div class="card">
@@ -29,63 +34,92 @@
                         <h6 class="text-center">SEGUNDO CARD</h6>
                     </div>
                     <div class="card-body">
-                        <p style="font-style: italic;">coche </p>
-                        <img src="https://mott.pe/noticias/wp-content/uploads/2019/04/12-trucos-y-consejos-para-conseguir-las-mejores-fotografias-de-autos.png" 
-                        alt="Imagen Segundo Card" class="img-fluid">
+                        <p style="font-style: italic;">coche </p> 
+                        <img src="https://mott.pe/noticias/wp-content/uploads/2019/04/12-trucos-y-consejos-para-conseguir-las-mejores-fotografias-de-autos.png" alt="Imagen Segundo Card" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div style="background-color: rgb(121, 1, 61); color: #ffff;" class="card-header">
+                        <h6 class="text-center">BOTONES CON CSS</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="basic-button-b">Botón Básico 1</button>
+                        <button class="extreme-round-button">Redondeado Extremo</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body">
-                            <button class="btn btn-primary w-100 mb-2">Botón 1</button>
-                            <button class="btn btn-success w-100">Botón 2</button>
-                        </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div style="background-color: rgb(143, 41, 0); color: #ffff;" class="card-header">
+                        <h6 class="text-center">BOTONES CON BOOTSTRAP</h6>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body">
-                            <button class="btn btn-secondary w-100 mb-2">Botón 3</button>
-                            <button class="btn btn-danger w-100">Botón 4</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body"></div>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="row mt-4">
-                <div class="col-md-2"> 
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body"></div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header"></div>
-                        <div class="card-body"></div>
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
                     </div>
                 </div>
             </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                crossorigin="anonymous"></script>
+            <div class="col-md-4">
+                <div class="card">
+                    <div style="background-color: rgb(176, 25, 118); color: #ffff;" class="card-header">
+                        <h6 class="text-center">IMAGENES</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="https://www.galgo.com/wp-content/uploads/2023/05/ninja-kawasaki.jpg" alt="Imagen 1" width="75%" height="100px">
+                        <br>
+                        <img src="https://www.moto1pro.com/sites/default/files/3_yamahahablafuturo.jpg" alt="Imagen 2" width="75%" height="100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="card">
+                    <div style="background-color: rgb(0, 101, 88); color: #ffff;" class="card-header">
+                        <h6 class="text-center">BOTON CON ICONO</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="icon-button"><i class="fas fa-thumbs-up"></i> Me Gusta</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <div style="background-color: rgb(143, 0, 110); color: #ffff;" class="card-header">
+                        <h6 class="text-center">BOTON CON ICONO</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <button class="fancy-button"><i class="fas fa-star"></i> Botón Elegante</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div style="background-color: rgb(143, 0, 124); color: red;" class="card-header">
+                        <h6 class="text-center">TERCER CARD</h6>
+                    </div>
+                    <div class="card-body text-center">
+                        <p style="font-style:italic;">El rugido de los motores es la música que nos define, un sonido que nos une en la carretera y nos hace sentir libres. Cada kilómetro recorrido es una nueva historia escrita en el asfalto, una aventura que solo los verdaderos bikers comprenden. No importa el destino, lo que importa es el viaje, la sensación de estar en control de nuestra máquina y nuestra vida. </p>
+                        <img src="https://www.motofichas.com/images/articulos/ducati/superleggera-v4/ducati-superleggera-v4-2020-accion-circuito-1000.jpg"
+                         alt="Imagen tercer Card" width="75%" height="200px">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

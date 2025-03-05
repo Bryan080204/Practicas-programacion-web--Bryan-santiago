@@ -1,0 +1,43 @@
+/* Estilos para los botones */
+.basic-button-b {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #24de2a; 
+    color: green(255, 255, 255); 
+    border: none; 
+    cursor: pointer; 
+}
+
+.extreme-round-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: orangered;
+    color: pink(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.icon-button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: brown; 
+    color: rgb(138, 40, 23); 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+}
+
+.fancy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d50101;
+    color: #09ff98;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
