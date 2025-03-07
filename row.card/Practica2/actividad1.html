@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
+    <!-- Se establece el charset como UTF-8 para soportar caracteres especiales y la codificación de la página -->
     <meta charset="UTF-8">
+    <!-- La metaetiqueta viewport asegura que la página sea responsive y se adapte a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se vincula el archivo CSS de Bootstrap desde una CDN para usar sus estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
@@ -11,26 +14,34 @@
 
 <body>
 
+    <!-- Contenedor principal para el contenido -->
     <div class="conteiner">
+        <!-- Fila para colocar las tarjetas en tres columnas -->
         <div class="row">
+            <!-- Primera columna de la fila (tercio de ancho en pantallas medianas y más grandes) -->
             <div class="col-md-4">
+                <!-- Tarjeta de Bootstrap que contiene una imagen, título y descripción -->
                 <div class="card mt-4">
                     <div class="card-body text-center">
+                        <!-- Imagen con estilo de borde redondeado y tamaño específico -->
                         <img style="border-radius: 50%; width: 160px;"
                             src="https://img.freepik.com/vector-premium/imagen-perfil-avatar-hombre-aislada-fondo-imagen-profil-avatar-hombre_1293239-4841.jpg?semt=ais_hybrid"
                             alt="">
+                        <!-- Título centrado -->
                         <h5 class="text-center">titulo 1</h5>
+                        <!-- Descripción de ejemplo -->
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dicta numquam obcaecati, ut
                             esse ea eum blanditiis, sequi magnam tempora autem? Quae rerum nulla, cupiditate animi
                             temporibus eum blanditiis maiores?</p>
+                        <!-- Botón que está en el centro de la tarjeta -->
                         <button class="btn btn-warning">mas informacion </button>
-
                     </div>
                 </div>
             </div>
+
+            <!-- Segunda columna de la fila, similar a la primera -->
             <div class="col-md-4">
                 <div class="card mt-4" style="min-height: 550px;">
-
                     <div class="card-body text-center">
                         <img style="border-radius: 50%; width: 150px;"
                             src="https://img.freepik.com/vector-premium/imagen-perfil-avatar-hombre-aislada-fondo-imagen-profil-avatar-hombre_1293239-4841.jpg?semt=ais_hybrid"
@@ -44,6 +55,7 @@
                 </div>
             </div>
 
+            <!-- Tercera columna de la fila -->
             <div class="col-md-4">
                 <div class="card mt-4">
                     <div class="card-body text-center">
@@ -55,15 +67,16 @@
                             esse ea eum blanditiis, sequi magnam tempora autem? Quae rerum nulla, cupiditate animi
                             temporibus eum blanditiis maiores?</p>
                         <button class="btn btn-warning">mas informacion </button>
-
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-
-
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                    crossorigin="anonymous"></script>
+    <!-- Se incluye el script de Bootstrap para que los componentes interactivos funcionen (como botones, modales, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
